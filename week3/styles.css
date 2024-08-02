@@ -1,0 +1,45 @@
+/* styles.css */
+body {
+    background-color: #f8f9fa; /* Light background color for the body */
+}
+
+.navbar {
+    background-color: #343a40; /* Dark color for the navbar */
+}
+
+.container {
+    background-color: #ffffff; /* White background for the container */
+    padding: 20px;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+
+h1 {
+    color: #343a40; /* Dark color for the heading */
+}
+
+p {
+    color: #6c757d; /* Gray color for the paragraph */
+}
+
+.form-group label {
+    color: #495057; /* Dark gray color for form labels */
+}
+
+.btn-danger {
+    background-color: #dc3545;
+    border-color: #dc3545;
+}
+
+.btn-danger:hover {
+    background-color: #c82333;
+    border-color: #bd2130;
+}
+
+.nav-link {
+    color: #ffffff !important; /* White color for navbar links */
+}
+
+.nav-link:hover {
+    color: #d3d3d3 !important; /* Light gray color on hover for navbar links */
+}
