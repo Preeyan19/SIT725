@@ -1,0 +1,27 @@
+body {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+  background-color: #E0F7FA;
+  font-family: 'Roboto', sans-serif;
+}
+
+.page-footer {
+  background-color: #2E8B57;
+}
+
+.title {
+  color: #004D40;
+}
+
+.mainText {
+  color: #004D40;
+}
+
+.card .card-image img {
+  height: 200px;
+}
+
+.nav-wrapper {
+  background-color: #2E8B57;
+}

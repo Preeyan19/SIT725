@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Innovation Hub</title>
+
+    <!-- Materialize CSS -->
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"
+      rel="stylesheet"
+    />
+    <!-- Material Icons -->
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Custom CSS -->
+    <link href="styles.css" rel="stylesheet" />
+  </head>
+
+  <body>
+    <!-- Navbar -->
+    <header>
+      <nav class="nav-wrapper teal darken-3">
+        <div class="container">
+          <a href="#" class="brand-logo">
+            <img
+              src="assets/innovate-logo.jpg"
+              alt="Innovation Hub Logo"
+              class="circle responsive-img logo-img"
+            />
+          </a>
+          <ul id="nav-mobile" class="right hide-on-med-and-down">
+            <li>
+              <a href="https://www.linkedin.com/in/your-profile" target="_blank"
+                >LinkedIn</a
+              >
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+      <div class="container">
+        <h1 class="center-align">Innovation Hub</h1>
+        <p class="flow-text center-align">
+          Empowering innovative minds with resources and opportunities
+        </p>
+
+        <div class="center-align">
+          <img
+            src="assets/innovate-image.jpg"
+            alt="Innovative Minds"
+            class="circle responsive-img main-image"
+          />
+        </div>
+
+        <div class="center-align" style="margin-top: 30px">
+          <a
+            class="waves-effect waves-light btn-large teal darken-2 modal-trigger"
+            href="#projectModal"
+          >
+            <i class="material-icons left">add</i>Add Your Project
+          </a>
+        </div>
+
+        <!-- Project List -->
+        <div class="section">
+          <div class="row" id="projectList"></div>
+        </div>
+      </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="page-footer teal darken-3">
+      <div class="container">
+        © 2024 Innovation Hub
+        <a
+          class="grey-text text-lighten-4 right"
+          href="https://github.com/your-repo"
+          target="_blank"
+        >
+          <img
+            src="assets/git-logo.svg"
+            style="height: 20px; margin-right: 15px"
+          />Source Code
+        </a>
+      </div>
+    </footer>
+
+    <!-- Project Modal Structure -->
+    <div id="projectModal" class="modal">
+      <div class="modal-content">
+        <h4>Add a New Project</h4>
+        <div class="row">
+          <div class="input-field col s12">
+            <input id="projectName" type="text" class="validate" />
+            <label for="projectName">Name</label>
+          </div>
+          <div class="input-field col s12">
+            <input id="projectTitle" type="text" class="validate" />
+            <label for="projectTitle">Project Title</label>
+          </div>
+          <div class="input-field col s12">
+            <textarea
+              id="projectDescription"
+              class="materialize-textarea"
+            ></textarea>
+            <label for="projectDescription">Project Description</label>
+          </div>
+          <div class="input-field col s12">
+            <input id="videoLink" type="text" class="validate" />
+            <label for="videoLink">Video URL</label>
+          </div>
+          <div class="input-field col s12">
+            <input id="imageLink" type="text" class="validate" />
+            <label for="imageLink">Image URL</label>
+          </div>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <a
+          href="#!"
+          class="modal-close waves-effect waves-green btn-flat"
+          onclick="submitProject()"
+          >Submit</a
+        >
+      </div>
+    </div>
+
+    <!-- JavaScript Libraries -->
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script src="env.js"></script>
+
+    <!-- Initialize Materialize Modal -->
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        var elems = document.querySelectorAll(".modal");
+        var instances = M.Modal.init(elems);
+      });
+
+      function submitProject() {
+        // Custom function to handle project submission
+        console.log("Project submitted!");
+      }
+    </script>
+  </body>
+</html>

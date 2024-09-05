@@ -1,0 +1,37 @@
+{
+  "name": "week6",
+  "version": "0.0.0",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "cf-deployment-tracker-client": "*",
+    "chai": "^4.5.0",
+    "commander": "^2.6.0",
+    "express": "^4.14.1",
+    "http-post": "^0.1.1",
+    "http-proxy": "^1.8.1",
+    "mocha": "^9.2.2",
+    "mongodb": "^3.6.6",
+    "request": "^2.88.2",
+    "socket.io": "^2.5.1"
+  },
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "test": "mocha --reporter spec"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/IBM-Bluemix/bluemix-hello-node.git"
+  },
+  "directories": {
+    "test": "test"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/IBM-Bluemix/bluemix-hello-node/issues"
+  },
+  "homepage": "https://github.com/IBM-Bluemix/bluemix-hello-node#readme",
+  "description": ""
+}
