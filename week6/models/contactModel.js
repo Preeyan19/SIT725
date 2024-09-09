@@ -1,5 +1,5 @@
 const { MongoClient } = require('mongodb');
-const mongoURI = "mongodb+srv://s224141207:Aman%407486@cluster0.5shbivq.mongodb.net/";
+
 
 let contactsCollection;
 
